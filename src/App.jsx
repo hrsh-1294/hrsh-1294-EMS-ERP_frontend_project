@@ -9,19 +9,20 @@ const App = () => {
 
   
   const [user, setUser] = useState(null)
-  const authData = useContext(AuthContext)
- 
-  useEffect(() => {
-    if(authData){
-      const loggedInUser = localStorage.getItem("loggedInUser")
-      // this logged in variable will be used to add the functionality to always open employee/admin dashboard accordingly until logged out
-      if(loggedInUser){
-        setUser(loggedInUser.role)
-
-      }
-    }
+  const [loggedInUserData, setLoggedInUserData] = useState(null)
   
-  }, [authData])
+  const authData = useContext(AuthContext)
+
+//  for remaining logged in
+  useEffect(() => {
+    const loggedInUser = localStorage.getItem('loggedInUser')
+    if(loggedInUser){
+      const userData = JSON.parse(loggedInUser)
+      setUser(userData.role)
+      setLoggedInUserData(userData.data)
+    }
+  },[])
+  
   
   
    const handleLogin =(email,password)=>{
@@ -30,9 +31,13 @@ const App = () => {
       localStorage.setItem('loggedInUser',JSON.stringify({role:'admin'}))
     }
     // emp(employee) is used for iteration for employees data in the array
-    else if(authData && authData.employees.find((emp)=>email == emp.email && emp.password == password)){ 
-     setUser('emloyee')
-     localStorage.setItem('loggedInUser',JSON.stringify({role:'employee'}))
+    else if(authData){ 
+     const employee = authData.employees.find((emp)=>email == emp.email && emp.password == password)
+     if(employee){
+       setUser('employee')
+       setLoggedInUserData(employee)
+       localStorage.setItem('loggedInUser',JSON.stringify({role:'employee', data:employee}))
+     }
 
 
     }
@@ -47,10 +52,13 @@ const App = () => {
 
   return (
     <>
-    {!user ? <Login handleLogin={handleLogin}/> : ''}
-    {user == 'admin' ? <AdminDashboard /> : <EmployeeDashboard />}
+    {!user ? <Login handleLogin={handleLogin}/> : null}
+    
+    {user === 'admin' ? <AdminDashboard /> : (user === 'employee' ?  <EmployeeDashboard data={loggedInUserData}/> : null )}
+    
     
     </>
+   
   )
 }
 
