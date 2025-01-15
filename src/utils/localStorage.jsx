@@ -9,9 +9,9 @@ const employees = [
     "taskCount": { "active": 2, "new_task": 1, "completed": 1, "failed": 0 },
     "tasks": [
       {
-        "task_title": "Design Homepage Layout",
-        "task_description": "Create a wireframe for the new homepage design.",
-        "task_date": "2024-12-08",
+        "taskTitle": "Design Homepage Layout",
+        "taskDescription": "Create a wireframe for the new homepage design.",
+        "taskDate": "2024-12-08",
         "category": "Design",
         "active": true,
         "new_task": true,
@@ -19,9 +19,9 @@ const employees = [
         "failed": false
       },
       {
-        "task_title": "Prepare Presentation",
-        "task_description": "Prepare slides for the client meeting.",
-        "task_date": "2024-12-09",
+        "taskTitle": "Prepare Presentation",
+        "taskDescription": "Prepare slides for the client meeting.",
+        "taskDate": "2024-12-09",
         "category": "Presentation",
         "active": false,
         "new_task": false,
@@ -29,9 +29,9 @@ const employees = [
         "failed": false
       },
       {
-        "task_title": "Team Meeting",
-        "task_description": "Discuss project milestones and deliverables.",
-        "task_date": "2024-12-10",
+        "taskTitle": "Team Meeting",
+        "taskDescription": "Discuss project milestones and deliverables.",
+        "taskDate": "2024-12-10",
         "category": "Meetings",
         "active": true,
         "new_task": false,
@@ -48,9 +48,9 @@ const employees = [
     "taskCount": { "active": 2, "new_task": 1, "completed": 0, "failed": 0 },
     "tasks": [
       {
-        "task_title": "Set Up CI/CD Pipeline",
-        "task_description": "Implement a CI/CD pipeline for the development environment.",
-        "task_date": "2024-12-08",
+        "taskTitle": "Set Up CI/CD Pipeline",
+        "taskDescription": "Implement a CI/CD pipeline for the development environment.",
+        "taskDate": "2024-12-08",
         "category": "DevOps",
         "active": true,
         "new_task": false,
@@ -58,9 +58,9 @@ const employees = [
         "failed": false
       },
       {
-        "task_title": "Create Database Schema",
-        "task_description": "Design the schema for the new database.",
-        "task_date": "2024-12-09",
+        "taskTitle": "Create Database Schema",
+        "taskDescription": "Design the schema for the new database.",
+        "taskDate": "2024-12-09",
         "category": "Development",
         "active": true,
         "new_task": true,
@@ -77,9 +77,9 @@ const employees = [
     "taskCount": { "active": 1, "new_task": 2, "completed": 1, "failed": 0 },
     "tasks": [
       {
-        "task_title": "Optimize Server Performance",
-        "task_description": "Analyze and improve server response times.",
-        "task_date": "2024-12-08",
+        "taskTitle": "Optimize Server Performance",
+        "taskDescription": "Analyze and improve server response times.",
+        "taskDate": "2024-12-08",
         "category": "DevOps",
         "active": false,
         "new_task": true,
@@ -87,9 +87,9 @@ const employees = [
         "failed": false
       },
       {
-        "task_title": "Develop API Endpoints",
-        "task_description": "Create RESTful API endpoints for user management.",
-        "task_date": "2024-12-09",
+        "taskTitle": "Develop API Endpoints",
+        "taskDescription": "Create RESTful API endpoints for user management.",
+        "taskDate": "2024-12-09",
         "category": "Development",
         "active": true,
         "new_task": false,
@@ -97,9 +97,9 @@ const employees = [
         "failed": false
       },
       {
-        "task_title": "Weekly Standup Meeting",
-        "task_description": "Provide updates on project progress.",
-        "task_date": "2024-12-10",
+        "taskTitle": "Weekly Standup Meeting",
+        "taskDescription": "Provide updates on project progress.",
+        "taskDate": "2024-12-10",
         "category": "Meetings",
         "active": false,
         "new_task": true,
@@ -116,9 +116,9 @@ const employees = [
     "taskCount": { "active": 2, "new_task": 2, "completed": 1, "failed": 0 },
     "tasks": [
       {
-        "task_title": "Review UX Design",
-        "task_description": "Provide feedback on the latest UX mockups.",
-        "task_date": "2024-12-08",
+        "taskTitle": "Review UX Design",
+        "taskDescription": "Provide feedback on the latest UX mockups.",
+        "taskDate": "2024-12-08",
         "category": "Design",
         "active": true,
         "new_task": false,
@@ -126,9 +126,9 @@ const employees = [
         "failed": false
       },
       {
-        "task_title": "DevOps Tools Evaluation",
-        "task_description": "Assess the tools for improving CI/CD processes.",
-        "task_date": "2024-12-09",
+        "taskTitle": "DevOps Tools Evaluation",
+        "taskDescription": "Assess the tools for improving CI/CD processes.",
+        "taskDate": "2024-12-09",
         "category": "DevOps",
         "active": false,
         "new_task": true,
@@ -136,9 +136,9 @@ const employees = [
         "failed": false
       },
       {
-        "task_title": "Project Planning Meeting",
-        "task_description": "Discuss the next sprint goals.",
-        "task_date": "2024-12-10",
+        "taskTitle": "Project Planning Meeting",
+        "taskDescription": "Discuss the next sprint goals.",
+        "taskDate": "2024-12-10",
         "category": "Meetings",
         "active": true,
         "new_task": true,
@@ -155,9 +155,9 @@ const employees = [
     "taskCount": { "active": 1, "new_task": 1, "completed": 1, "failed": 0 },
     "tasks": [
       {
-        "task_title": "Logo Redesign",
-        "task_description": "Create a modern logo design for the brand.",
-        "task_date": "2024-12-08",
+        "taskTitle": "Logo Redesign",
+        "taskDescription": "Create a modern logo design for the brand.",
+        "taskDate": "2024-12-08",
         "category": "Design",
         "active": false,
         "new_task": true,
@@ -165,9 +165,9 @@ const employees = [
         "failed": false
       },
       {
-        "task_title": "Present Findings",
-        "task_description": "Summarize key research findings for the team.",
-        "task_date": "2024-12-09",
+        "taskTitle": "Present Findings",
+        "taskDescription": "Summarize key research findings for the team.",
+        "taskDate": "2024-12-09",
         "category": "Presentation",
         "active": true,
         "new_task": false,
